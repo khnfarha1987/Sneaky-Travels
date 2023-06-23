@@ -38,7 +38,6 @@ code {
   animation-duration: 1300ms;
   animation-iteration-count: infinite;
 }
-
 .heart:before,
 .heart:after {
   content: '';
@@ -63,7 +62,6 @@ code {
   0% {
     transform: scale(1) rotate(-45deg);
   }
-
   50% {
     transform: scale(0.9) rotate(-45deg);
   }
