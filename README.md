@@ -7,7 +7,7 @@ Project 2 : Client-Side Single-Page Application Project
 - [Table of Contents](#table-of-contents)
 - [Project Requirements](#project-requirements)
 - [Team Approach](#team-approach)
-- [Project Description](#project-description)
+- [Project Description:](#project-description)
 - [Installation and Usage](#installation-and-usage)
 - [Technologies Used](#technologies-used)
 - [Contributors](#contributors)
@@ -32,7 +32,8 @@ Project must fulfill the following requirements:
 
 # Team Approach
 
-# Project Description
+# Project Description:
+As a traveler an
 
 # Installation and Usage
 

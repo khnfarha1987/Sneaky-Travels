@@ -145,21 +145,17 @@ export class HeaderNav extends Component {
             </div>
             <div className="header-right">
               <a
-                href="https://lastnamearya.github.io"
+                href="https://www.linkedin.com/in/farha-khan-b74340208/"
                 target="_blank"
                 rel="noopener noreferrer"
                 style={{ textDecoration: 'none' }}
               >
+
                 <div className="sign-in">
                   {/* <i className="fas fa-user-circle sign-in-user" /> */}
-                  <div className="lastnamearya-img">
-                    <img
-                      src="https://secure.gravatar.com/avatar/413b990ccd2cf5ba69d609fdba4f0302"
-                      alt="lastnamearya"
-                    />
-                  </div>
+
                   <p style={{ color: '#ec1943', marginLeft: '5px' }}>
-                    lastnamearya
+                    Connect
                     <span className="arrow-down">
                       {' '}
                       <i className="fas fa-angle-down" />
