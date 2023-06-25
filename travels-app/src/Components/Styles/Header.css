@@ -4,11 +4,8 @@
 
 .navbar-fixed-top {
   position: fixed;
-
   right: 0;
-
   left: 0;
-
   z-index: 999;
 }
 
@@ -19,7 +16,6 @@
   display: flex;
   justify-content: center;
   background: #fff;
-  height: 84px;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 9px 0px;
 }
 
@@ -38,7 +34,7 @@
 }
 
 #logo {
-  height: 25px;
+  height: auto;
   width: 150px;
   padding-top: 6px;
 }
