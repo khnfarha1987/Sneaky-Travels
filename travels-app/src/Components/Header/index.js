@@ -134,7 +134,7 @@ export class HeaderNav extends Component {
                       marginRight: '0px'
                     }}
                   >
-                    English/USD
+                    English/GBP
                     <span className="arrow-down">
                       {' '}
                       <i className="fas fa-angle-down" />
