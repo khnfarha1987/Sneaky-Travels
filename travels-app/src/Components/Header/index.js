@@ -5,6 +5,7 @@ import Background from './Background';
 import Logo from '../Images/headout.png';
 import MobileApp from '../Images/mobile-app.gif';
 import '../Styles/Header.css';
+import axios from 'axios';
 
 class Header extends Component {
   state = {
@@ -182,23 +183,50 @@ export class HeaderNav extends Component {
   }
 }
 
-const options = [
-  { value: 'new-york', label: 'New York' },
-  { value: 'las-vegas', label: 'Las Vegas' },
-  { value: 'rome', label: 'Rome' },
-  { value: 'paris', label: 'Paris' },
-  { value: 'london', label: 'London' },
-  { value: 'dubai', label: 'Dubai' },
-  { value: 'barcelona', label: 'Barcelona' },
-  { value: 'madrid', label: 'Madrid' },
-  { value: 'singapore', label: 'Singapore' },
-  { value: 'venice', label: 'Venice' },
-  { value: 'milan', label: 'Milan' },
-  { value: 'naples', label: 'Naples' },
-  { value: 'budapest', label: 'Budapest' },
-  { value: 'edinburg', label: 'Edinburg' },
-  { value: 'florence', label: 'Florence' }
-];
+function getCitiesFromAPI() {
+  return axios.get('https://countriesnow.space/api/v0.1/countries').then(response => {
+    const data = response.data.data;
+    var cities = []
+    var cityArray = [];
+    const countrySearch = ["India", "United Kingdom", "United Arab Emirates", "United States"]
+    data.map(item => {
+      if (countrySearch.includes(item.country)) {
+        cities = (item.cities.map(item1 => {
+          return {
+            value: item1,
+            label: item1
+          };
+        }))
+        cityArray.push(cities);
+      }
+    }
+    );
+    cityArray.forEach(element => {
+      element.forEach(element1 => {
+        cities.push(element1);
+      })
+    });
+    return cities;
+  })
+    .catch(error => {
+      console.error(error);
+      throw error; // Re-throw the error to be handled by the caller method
+    });
+}
+
+function getCitiesFromResponse() {
+  var cityOption = [];
+  getCitiesFromAPI()
+    .then(cities => {
+      cities.forEach(element => {
+        cityOption.push(element);
+      });
+    })
+    .catch(error => {
+      console.error(error); // Handle the error
+    });
+  return cityOption;
+}
 
 const customStyles = {
   option: (provided, state) => ({
@@ -271,6 +299,7 @@ class Searchbar extends Component {
   render() {
     const { selectedOption } = this.state;
     const { selectedCity } = this.props;
+    var options = getCitiesFromResponse();
     if (selectedCity) {
       return (
         <Select
@@ -291,8 +320,7 @@ class Searchbar extends Component {
           onChange={this.handleChange}
           options={options}
           className="city-select-dropdown"
-        />
-      );
+        />)
     }
   }
 }

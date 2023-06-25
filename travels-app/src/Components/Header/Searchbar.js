@@ -60,6 +60,17 @@ class Searchbar extends Component {
     const { selectedOption } = this.state;
     return (
       <div className="search-bar">
+        <div className="select-country-large">
+          <div className="select-div">
+            <Select
+              styles={customStyles}
+              placeholder="Select Country"
+              value={selectedOption}
+              onChange={this.handleChange}
+              options={options}
+            />
+          </div>
+        </div>
         <div className="select-city-large">
           <div className="select-div">
             <Select

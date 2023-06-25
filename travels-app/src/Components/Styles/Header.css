@@ -50,6 +50,13 @@
   margin-left: 35px;
 }
 
+.select-country {
+  width: 171px;
+  height: 36px;
+  background-color: #f4f4f4;
+  margin-left: 35px;
+}
+
 .select-experience {
   background-color: #f4f4f4;
   margin-left: 5px;
@@ -191,6 +198,23 @@
 }
 
 .select-city-large i {
+  color: #9a9a9a;
+  padding-top: 20px;
+  padding-left: 30px;
+  font-size: 15px;
+}
+
+.select-country-large {
+  width: 216px;
+  height: 54px;
+  border-radius: 3px;
+  box-shadow: 0 5px 22px 0 rgba(0, 0, 0, 0.2);
+  background: white;
+  cursor: pointer;
+  display: flex;
+}
+
+.select-country-large i {
   color: #9a9a9a;
   padding-top: 20px;
   padding-left: 30px;
