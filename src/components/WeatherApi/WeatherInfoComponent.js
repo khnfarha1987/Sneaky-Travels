@@ -1,13 +1,14 @@
 import React from "react";
 import styled from "styled-components";
 import { WeatherIcons } from "../../App";
+const iconPath = process.env.PUBLIC_URL + '/icons/';
 
 export const WeatherInfoIcons = {
-  sunset: '../../images/temp.svg',
-  sunrise: '../../images/temp.svg',
-  humidity: '../../images/humidity.svg',
-  wind: '../../images/wind.svg',
-  pressure: '../../images/pressure.svg',
+  sunset: `${iconPath}temp.svg`,
+  sunrise: `${iconPath}temp.svg`,
+  humidity: `${iconPath}humidity.svg`,
+  wind: `${iconPath}wind.svg`,
+  pressure: `${iconPath}pressure.svg`,
 };
 const Location = styled.span`
   margin: 15px auto;
