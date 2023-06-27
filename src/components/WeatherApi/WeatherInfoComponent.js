@@ -14,6 +14,8 @@ const Location = styled.span`
   text-transform: capitalize;
   font-size: 28px;
   font-weight: bold;
+  color:#fff;
+
 `;
 const Condition = styled.span`
   margin: 20px auto;
@@ -21,6 +23,8 @@ const Condition = styled.span`
   font-size: 14px;
   & span {
     font-size: 28px;
+    color:#fff;
+
   }
 `;
 const WeatherInfoLabel = styled.span`
@@ -30,11 +34,15 @@ const WeatherInfoLabel = styled.span`
   width: 90%;
   font-weight: bold;
   font-size: 14px;
+  color:#fff;
+
 `;
 const WeatherIcon = styled.img`
   width: 100px;
   height: 100px;
   margin: 5px auto;
+  color:#fff;
+
 `;
 const WeatherContainer = styled.div`
   display: flex;
@@ -43,6 +51,8 @@ const WeatherContainer = styled.div`
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  color:#fff;
+
 `;
 
 const WeatherInfoContainer = styled.div`
@@ -52,6 +62,8 @@ const WeatherInfoContainer = styled.div`
   justify-content: space-evenly;
   align-items: center;
   flex-wrap: wrap;
+  color:#fff;
+
 `;
 const InfoContainer = styled.div`
   display: flex;
@@ -59,6 +71,7 @@ const InfoContainer = styled.div`
   flex-direction: row;
   justify-content: space-evenly;
   align-items: center;
+  color:#fff;
 `;
 const InfoIcon = styled.img`
   width: 36px;
@@ -69,6 +82,7 @@ const InfoLabel = styled.span`
   flex-direction: column;
   font-size: 14px;
   margin: 15px;
+
   & span {
     font-size: 12px;
     text-transform: capitalize;

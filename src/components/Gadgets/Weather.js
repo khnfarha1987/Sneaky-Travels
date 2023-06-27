@@ -1,16 +1,11 @@
 import React, { useState } from "react";
-import Icon1 from '../../images/cloudy.png';
-import Icon2 from '../../images/map.png';
-import Icon3 from '../../images/location-pin.png';
+
 
 
 import {
     ServicesContainer,
     ServicesH1,
-    ServicesWrapper,
-    ServicesCard,
-    ServicesIcon,
-    ServicesH2,
+
 } from './WeatherElements';
 import CityComponent from '../WeatherApi/CityComponent';
 import WeatherComponent from '../WeatherApi/WeatherInfoComponent';
@@ -35,28 +30,7 @@ const Weather = () => {
             ) : (
                 <CityComponent updateCity={updateCity} fetchWeather={fetchWeather} />
             )}
-            <ServicesWrapper>
-                <ServicesCard>
-                    <ServicesH2>Weather Check
-
-                    </ServicesH2>
-                    <ServicesIcon src={Icon1} />
-                </ServicesCard>
-                <ServicesCard>
-                    <ServicesH2>Locations</ServicesH2>
-                    <ServicesIcon src={Icon2} />
-
-                </ServicesCard>
-
-                <ServicesCard>
-                    <ServicesH2>Attractions</ServicesH2>
-
-                    <ServicesIcon src={Icon3} />
-
-                </ServicesCard>
-
-
-            </ServicesWrapper>
+           
         </ServicesContainer>
     )
 }
