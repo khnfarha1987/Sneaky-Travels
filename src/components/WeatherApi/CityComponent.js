@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import React from "react";
+const iconPath = process.env.PUBLIC_URL + '/icons/';
 
 const SearchBox = styled.form`
   display: flex;
@@ -44,7 +45,7 @@ const CityComponent = (props) => {
   const { updateCity, fetchWeather } = props;
   return (
     <>
-      <WelcomeWeatherLogo src={"/react-webapp/icons/perfect-day.svg"} />
+      <WelcomeWeatherLogo src={`${iconPath}/perfect-day.svg`} />
       <ChooseCityLabel>Find Weather of your city</ChooseCityLabel>
       <SearchBox onSubmit={fetchWeather}>
         <input
