@@ -41,7 +41,6 @@ const WeatherIcon = styled.img`
   width: 100px;
   height: 100px;
   margin: 5px auto;
-  color:#fff;
 
 `;
 const WeatherContainer = styled.div`
