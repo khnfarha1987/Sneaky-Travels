@@ -8,17 +8,18 @@ export const ServicesContainer = styled.div`
 	background: #2d3962;
 	border-top: 5px white solid;
 	border-bottom: 5px white solid;
+	height: auto; /* Remove fixed height */
 
 	@media screen and (max-width: 985px) {
-		height: 1200px;
+		height: auto; /* Remove fixed height */
 	}
 
 	@media screen and (max-width: 885px) {
-		height: 1400px;
+		height: auto; /* Remove fixed height */
 	}
 
 	@media screen and (max-width: 480px) {
-		height: 1400px;
+		height: auto; /* Remove fixed height */
 	}
 `;
 

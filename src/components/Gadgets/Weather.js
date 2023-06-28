@@ -44,22 +44,24 @@ const Weather = () => {
 			<ServicesH1>Gadgets</ServicesH1>
 			<CityComponent updateCity={updateCity} fetchWeather={fetchWeather} />
 			{city && weather ? (
-				<WeatherComponent weather={weather} city={city} />
-			) : null}
-			{photos.length > 0 ? (
-				<ServicesWrapper>
-					{photos.slice(0, 9).map((photo, index) => (
-						<img
-							key={index}
-							src={photo.urls.small}
-							alt={`Photo ${index + 1}`}
-						/>
-					))}
-				</ServicesWrapper>
+				<>
+					<WeatherComponent weather={weather} city={city} />
+					{photos.length > 0 ? (
+						<ServicesWrapper>
+							{photos.slice(0, 8).map((photo, index) => (
+								<img
+									key={index}
+									src={photo.urls.small}
+									alt={`Photo ${index + 1}`}
+								/>
+							))}
+						</ServicesWrapper>
+					) : (
+						<ServicesH2>No photos found</ServicesH2>
+					)}
+				</>
 			) : (
-				<ServicesWrapper>
-					{!city ? <ServicesH2></ServicesH2> : <ServicesH2></ServicesH2>}
-				</ServicesWrapper>
+				<ServicesH2>Enter a city to get weather information</ServicesH2>
 			)}
 		</ServicesContainer>
 	);
