@@ -102,6 +102,12 @@ export const WebsiteRights = styled.small`
     margin-bottom: 16px;
 `;
 
+
+export const TeamMembers = styled.small`
+    color: #fff;
+    margin-bottom: 16px;
+`;
+
 export const SocialIcons = styled.div`
     display: flex;
     justify-content: space-between;

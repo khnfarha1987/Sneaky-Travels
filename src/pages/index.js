@@ -11,25 +11,25 @@ import { contactForm } from '../components/ContactForm/Data'
 import Weather from '../components/Gadgets/Weather';
 
 const Home = () => {
-    const [isOpen, setIsOpen] = useState(false)
+  const [isOpen, setIsOpen] = useState(false)
 
-    const toggle = () => {
-        setIsOpen(!isOpen)
-    };
+  const toggle = () => {
+    setIsOpen(!isOpen)
+  };
 
-    return (
-        <>
-            <Sidebar isOpen={isOpen} toggle={toggle}/>
-            <Navbar toggle={toggle}/>
-            <HeroSection />
-            <Weather />
-						<Services />
-            <InfoSection {...homeObjTwo}/>
-            <InfoSection {...homeObjOne}/>
-						<ContactForm {...contactForm}/>
-            <Footer />
-        </>
-    );
+  return (
+    <>
+      <Sidebar isOpen={isOpen} toggle={toggle} />
+      <Navbar toggle={toggle} />
+      <HeroSection />
+      <Weather />
+      <Services />
+      <InfoSection {...homeObjTwo} />
+      <InfoSection {...homeObjOne} />
+      <ContactForm {...contactForm} />
+      <Footer />
+    </>
+  );
 };
 
 export default Home;

@@ -1,20 +1,22 @@
 import React from 'react';
-import {animateScroll as scroll } from 'react-scroll';
+import { animateScroll as scroll } from 'react-scroll';
 import { FaFacebook, FaInstagram, FaYoutube, FaTwitter, FaLinkedin } from 'react-icons/fa';
-import { FooterContainer, 
-        FooterWrap, 
-        FooterLinksContainer, 
-        FooterLinksWrapper, 
-        FooterLinkItems, 
-        FooterLinkTitle,
-        SocialMedia,
-        SocialMediaWrap,
-        SocialLogo,
-        WebsiteRights,
-        SocialIcons,
-        SocialIconLink,
-    		} 
-        from './FooterElements';
+import {
+    FooterContainer,
+    FooterWrap,
+    FooterLinksContainer,
+    FooterLinksWrapper,
+    FooterLinkItems,
+    FooterLinkTitle,
+    SocialMedia,
+    SocialMediaWrap,
+    SocialLogo,
+    WebsiteRights,
+    TeamMembers,
+    SocialIcons,
+    SocialIconLink,
+}
+    from './FooterElements';
 
 const Footer = () => {
 
@@ -37,10 +39,10 @@ const Footer = () => {
                     </FooterLinksWrapper>
                     <FooterLinksWrapper>
                         <FooterLinkItems>
-                        <FooterLinkTitle>Packages</FooterLinkTitle>
+                            <FooterLinkTitle>Packages</FooterLinkTitle>
                         </FooterLinkItems>
                         <FooterLinkItems>
-                        <FooterLinkTitle>Contact</FooterLinkTitle>
+                            <FooterLinkTitle>Contact</FooterLinkTitle>
                         </FooterLinkItems>
                     </FooterLinksWrapper>
                 </FooterLinksContainer>
@@ -49,28 +51,30 @@ const Footer = () => {
                         <SocialLogo to="/" onClick={toggleHome}>
                             Sneaky Travels
                         </SocialLogo>
-                        <WebsiteRights>Sneaky Travels © {new Date().getFullYear()} All rights reserved</WebsiteRights>
+                        <WebsiteRights>Sneaky Travels © {new Date().getFullYear()} All rights reserved
+                        </WebsiteRights>
+                        <TeamMembers> Made by Farha, Qasim and Fotios</TeamMembers>
                         <SocialIcons>
-                            <SocialIconLink href="//www.twitter.com/" target="_blank" aria-label="Facebook">
+                            <SocialIconLink href="//www.facebook.com/" target="_blank" aria-label="Facebook">
                                 <FaFacebook />
                             </SocialIconLink>
-                            <SocialIconLink href="/" target="_blank" aria-label="Instagram">
+                            <SocialIconLink href="//www.instagram.com/" target="_blank" aria-label="Instagram">
                                 <FaInstagram />
                             </SocialIconLink>
-                            <SocialIconLink href="/" target="_blank" aria-label="YouTube">
+                            <SocialIconLink href="//www.youtube.com" target="_blank" aria-label="YouTube">
                                 <FaYoutube />
                             </SocialIconLink>
-                            <SocialIconLink href="/" target="_blank" aria-label="Twitter">
+                            <SocialIconLink href="//www.twitter.com" target="_blank" aria-label="Twitter">
                                 <FaTwitter />
                             </SocialIconLink>
-                            <SocialIconLink href="/" target="_blank" aria-label="LinkedIn">
+                            <SocialIconLink href="//www.linkedin.com" target="_blank" aria-label="LinkedIn">
                                 <FaLinkedin />
                             </SocialIconLink>
                         </SocialIcons>
                     </SocialMediaWrap>
                 </SocialMedia>
             </FooterWrap>
-            
+
         </FooterContainer>
     )
 }

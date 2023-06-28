@@ -1,3 +1,5 @@
+
+
 export const contactForm = {
 	id: 'discover',
 	lightBg: true,
@@ -8,7 +10,7 @@ export const contactForm = {
 	description: '',
 	buttonLabel: "Contact for more details",
 	imgStart: false,
-	img: require('../../images/company-logo.png').default,
+	img: require(`../../images/company-logo.png`).default,
 	alt: 'Planet',
 	dark: false,
 	primary: false,
