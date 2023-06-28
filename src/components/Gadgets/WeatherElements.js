@@ -72,7 +72,7 @@ export const ServicesP = styled.p`
 `;
 
 export const btn = styled.b`
-	background: #01bf71;
+	background: rgb(1, 191, 113);
 	padding: 5px 10px;
 	border: none;
 	border-radius: 10px;
