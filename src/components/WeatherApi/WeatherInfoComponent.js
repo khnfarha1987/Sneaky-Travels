@@ -11,12 +11,14 @@ export const WeatherInfoIcons = {
   pressure: `${iconPath}pressure.svg`,
 };
 const Location = styled.span`
+color: white;
   margin: 15px auto;
   text-transform: capitalize;
   font-size: 28px;
   font-weight: bold;
 `;
 const Condition = styled.span`
+color: white;
   margin: 20px auto;
   text-transform: capitalize;
   font-size: 14px;
@@ -25,6 +27,7 @@ const Condition = styled.span`
   }
 `;
 const WeatherInfoLabel = styled.span`
+color: white;
   margin: 20px 25px 10px;
   text-transform: capitalize;
   text-align: start;
@@ -38,6 +41,7 @@ const WeatherIcon = styled.img`
   margin: 5px auto;
 `;
 const WeatherContainer = styled.div`
+
   display: flex;
   width: 100%;
   margin: 30px auto;
@@ -47,6 +51,7 @@ const WeatherContainer = styled.div`
 `;
 
 const WeatherInfoContainer = styled.div`
+color: white;
   display: flex;
   width: 90%;
   flex-direction: row;
