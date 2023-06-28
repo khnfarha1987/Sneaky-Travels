@@ -10,6 +10,14 @@ const SearchBox = styled.form`
 	border-radius: 50 px;
 	width: 20%;
 
+	@media (max-width: 768px) {
+		width: 70%;
+	}
+
+	@media (max-width: 480px) {
+		width: 90%;
+	}
+
 	& input {
 		width: 70%;
 		border-radius: 50px 0 0 50px;
