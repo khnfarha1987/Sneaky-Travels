@@ -7,10 +7,12 @@ const SearchBox = styled.form`
 	flex-direction: row;
 	justify-content: space-evenly;
 	margin: 20px;
-	border: black solid 1px;
-	border-radius: 2px;
+	border-radius: 50 px;
+	width: 70%;
 
 	& input {
+		width: 70%;
+		border-radius: 50px 0 0 50px;
 		padding: 10px;
 		font-size: 14px;
 		border: none;
@@ -19,7 +21,9 @@ const SearchBox = styled.form`
 		font-weight: bold;
 	}
 	& button {
-		background-color: black;
+		width: 30%;
+		border-radius: 0 50px 50px 0;
+		background-color: rgb(1, 191, 113);
 		font-size: 14px;
 		padding: 0 10px;
 		color: white;

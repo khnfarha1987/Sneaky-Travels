@@ -1,4 +1,5 @@
-import React, { useState, useEffect } from "react";
+/* eslint-disable jsx-a11y/img-redundant-alt */
+import React, { useState } from "react";
 import axios from "axios";
 import {
 	ServicesContainer,
@@ -61,7 +62,7 @@ const Weather = () => {
 					)}
 				</>
 			) : (
-				<ServicesH2>Enter a city to get weather information</ServicesH2>
+				<ServicesH2></ServicesH2>
 			)}
 		</ServicesContainer>
 	);
