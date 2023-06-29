@@ -30,7 +30,6 @@ Project 2 : Client-Side Single-Page Application Project
 - [Future Development](#future-development)
 - [Questions](#questions)
 - [Image Links of this Project:](#image-links-of-this-project)
-- [Video Links of this Project:](#video-links-of-this-project)
 - [Application GitHub URL:](#application-github-url)
 - [Application Deployed live URL:](#application-deployed-live-url)
   
@@ -122,11 +121,6 @@ If you have any questions about this project, please email our team, or you can 
 ![alt](./src/assets/image-4.png)
 ![alt](./src/assets/image-5.png)
 ![alt](./src/assets/image-6.png)
-![alt](./src/assets/image-7.png)
-![alt](./src/assets/image-8.png)
-
-# Video Links of this Project:
-![alt](./src/assets/video.gif)
 
 # Application GitHub URL:
 [GitHub Link](https://github.com/khnfarha1987/Sneaky-Travels)
